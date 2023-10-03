@@ -1,1 +1,45 @@
 /* место для вашего кода */
+header {
+  display: grid;
+  padding: 92px 50px;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 80px)
+
+}
+
+.header__menu {
+  display: flex;
+  gap: 32px;
+  flex-flow: row nowrap;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.header__links-list {
+  display: flex;
+  list-style-type: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__logo {
+  justify-items: stretch;
+}
+
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+.addres {
+
+}
+
+.addres__list {
+
+}
+.addres__list-text {
+  list-style: none;
+}
