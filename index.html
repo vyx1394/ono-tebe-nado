@@ -14,8 +14,10 @@
       <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item_no-bullit">главная</li>
-          <li class="header__links-list-item">посмотреть лоты</li>
-          <li class="header__links-list-item">об аукционе</li>
+          <li class="header__links-list-item">
+            <a href="#">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item"><a href="#">об аукционе</a></li>
         </ul>
       </nav>
 
@@ -29,11 +31,15 @@
         </a>
       </dev>
 
-      <dev class="addres">
+      <dev class="header__addres">
         <ul class="addres__list">
-          <li class="addres__list-text">+9 999 555 5555</li>
-          <li class="addres__list-text">info@sobaka.ge</li>
           <li class="addres__list-text">
+            <a href="tel:+70000000">+9 999 555 5555</a>
+          </li>
+          <li class="addres__list-text">
+            <a href="mailto:mail@example.com">info@sobaka.ge</a>
+          </li>
+          <li class="addres__list-text addres__list-text__no-mark">
             наб. Принсенграхт 263-265, Амстердам
           </li>
         </ul>
@@ -41,9 +47,27 @@
     </header>
 
     <main>
-      <h1>оно тебе надо</h1>
-    </main>
+      <section class="cover">
+        <h1 class="main__text">
+          <dev class="top_left">о<span class="spaced_aruond">но</span></dev>
+          <dev class="middle_center"
+            >те<span class="spaced_aruond">б</span>е</dev
+          >
+          <dev class="bottom_right"
+            ><span class="spaced_aruond">н</span>адо</dev
+          >
 
+          <h2 class="quote__text">Аукцион вещей, в которые никто не верил</h2>
+          <button class="bet_button">
+            <p>Сделать ставку</p>
+          </button>
+        </h1>
+      </section>
+
+      <lots class="lots"> </lots>
+
+      <about> </about>
+    </main>
     <footer></footer>
   </body>
 </html>

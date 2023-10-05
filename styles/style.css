@@ -1,45 +1,111 @@
 /* место для вашего кода */
-header {
-  display: grid;
-  padding: 92px 50px;
-  justify-content: space-between;
-  grid-template-columns: repeat(3, 80px)
-
+body {
+  width: 1440px;
 }
 
-.header__menu {
-  display: flex;
-  gap: 32px;
-  flex-flow: row nowrap;
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  padding: 92px 50px;
   align-items: center;
-  white-space: nowrap;
+  font-size: 18px;
+}
+
+.header__logo-image {
+  display: block;
+}
+.header__logo {
+  width: 148px;
+  height: 105px;
+  flex-shrink: 1;
+  justify-self: center;
+  padding: 5px;
 }
 
 .header__links-list {
   display: flex;
-  list-style-type: circle;
+  flex-flow: row nowrap;
+  list-style: circle;
+  gap: 32px;
+  line-height: normal;
 }
-
 .header__links-list-item_no-bullit {
   list-style: none;
 }
 
-.header__logo {
-  justify-items: stretch;
-}
-
-.header__logo-image {
-  width: 148px;
-  height: 105px;
-}
-
-.addres {
-
+.header__addres {
+  max-width: 240px;
+  justify-self: end;
 }
 
 .addres__list {
-
-}
-.addres__list-text {
   list-style: none;
 }
+/*текст ОТН на большой картинке*/
+.cover {
+  display: grid;
+  background-image: url(/images/cover.jpg);
+  background-clip: border-box;
+  height: 757px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.main__text {
+  color: #fff;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  gap: 20px;
+}
+
+.spaced_aruond {
+  letter-spacing: 60px;
+}
+
+.main__text {
+  display: grid;
+  padding: 165px 50px 237px 50px;
+}
+
+.top_left {
+  justify-self: start;
+}
+
+.middle_center {
+  justify-self: center;
+}
+
+.bottom_right {
+  justify-self: end;
+}
+
+.quote__text {
+  display: grid;
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 127.273% */
+  text-transform: uppercase;
+  justify-self: end;
+}
+
+.bet_button {
+  background-color: transparent;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  justify-self: end;
+  width: 257px;
+  height: 52px;
+  color: #fff;
+  
